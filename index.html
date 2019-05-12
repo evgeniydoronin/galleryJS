@@ -9,9 +9,9 @@
         body {
             display: flex;
             align-items: center;
-            justify-content: center;
             height: 100vh;
-            margin: 0;
+            width: 80vw;
+            margin: 0 auto;
         }
         .gallery {
             display: grid;
@@ -20,23 +20,53 @@
         }
         img {
             cursor: pointer;
+            width: 100%;
+        }
+        .modal {
+            background: rgba(0, 0, 0, .5);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal span {
+            background-color: aquamarine;
+            padding: .5em;
+            cursor: pointer;
+        }
+        .modal img {
+            max-width: 800px;
+        }
+        .slider {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .closeBtn {
+            position: absolute;
+            right: 0;
+            top: 0;
         }
     </style>
 
 </head>
 <body>
     <div class="gallery">
-        <img src="http://veronaobuv.ru/wp-content/uploads/2019/05/gallery_item.png" alt="">
-        <img src="http://veronaobuv.ru/wp-content/uploads/2019/05/2-e1557151667479.jpg" alt="">
-        <img src="http://veronaobuv.ru/wp-content/uploads/2019/05/gallery_item.png" alt="">
-        <img src="http://veronaobuv.ru/wp-content/uploads/2019/05/2-e1557151667479.jpg" alt="">
-        <img src="http://veronaobuv.ru/wp-content/uploads/2019/05/gallery_item.png" alt="">
-        <img src="http://veronaobuv.ru/wp-content/uploads/2019/05/2-e1557151667479.jpg" alt="">
-        <img src="http://veronaobuv.ru/wp-content/uploads/2019/05/gallery_item.png" alt="">
-        <img src="http://veronaobuv.ru/wp-content/uploads/2019/05/2-e1557151667479.jpg" alt="">
-        <img src="http://veronaobuv.ru/wp-content/uploads/2019/05/gallery_item.png" alt="">
-        <img src="http://veronaobuv.ru/wp-content/uploads/2019/05/2-e1557151667479.jpg" alt="">
+        <img src="http://lorempixel.com/1000/600/technics/1" alt="">
+        <img src="http://lorempixel.com/1000/600/technics/2" alt="">
+        <img src="http://lorempixel.com/1000/600/technics/3" alt="">
+        <img src="http://lorempixel.com/1000/600/technics/4" alt="">
+        <img src="http://lorempixel.com/1000/600/technics/5" alt="">
+        <img src="http://lorempixel.com/1000/600/technics/6" alt="">
+        <img src="http://lorempixel.com/1000/600/technics/7" alt="">
+        <img src="http://lorempixel.com/1000/600/technics/8" alt="">
+        <img src="http://lorempixel.com/1000/600/technics/9" alt="">
     </div>
+
 
     <script src="./scripts.js"></script>
 </body>
