@@ -8,6 +8,7 @@ const close = (elem) => {
     popup.addEventListener('click', e => {
         if (e.srcElement.className == 'closeBtn' || e.srcElement.className == 'modal') {
             document.body.removeChild(popup)
+            
         }
     })
 
@@ -29,6 +30,7 @@ const navWalker = (index) => {
         if (index != lastSlide) {
             document.querySelector('.slider').innerHTML = `<span class="prev">prev</span><img src="${sliderImages[index + 1].src}"><span class="next">next</span><span class="closeBtn">close</span>`
             navWalker(index + 1)
+            document.body.style.overflow = 'visible'
         }
     })
     
@@ -36,6 +38,7 @@ const navWalker = (index) => {
         if (index != 0) {
             document.querySelector('.slider').innerHTML = `<span class="prev">prev</span><img src="${sliderImages[index - 1].src}"><span class="next">next</span><span class="closeBtn">close</span>`
             navWalker(index - 1)
+            document.body.style.overflow = 'visible'
         }
     })
 
